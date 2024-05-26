@@ -1,0 +1,73 @@
+.pdf-viewer {
+    overflow: auto;
+    height: 100%;
+    display:grid;
+    place-items:center;
+    overflow-x: hidden;
+    
+
+   
+   
+}
+
+.pdf-page-container {
+    margin: 1em 0;
+}
+
+.pdf-viewer::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #f5f5f5;
+  border-radius:8px;
+}
+
+.pdf-viewer::-webkit-scrollbar
+{
+	width: 5px;
+  border-radius:12px;
+	background-color: #f5f5f5;
+  
+  
+}
+
+.pdf-viewer::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: rgb(82,86,89);
+  border:1px solid #f5f5f5;
+  border-radius:8px;
+}
+
+
+.pdf-page-container {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.delete-button {
+  background-color: #ff5100; /* Blue color, you can change it */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.submit-button {
+  position: fixed; /* Changed from absolute to fixed */
+  top: 10px;
+  left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10; /* Ensure it stays above other elements */
+}
